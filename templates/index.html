@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于Neo4j的中文智能问答系统</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">基于Neo4j的军事研报知识图谱问答系统</h1>
+        <form method="POST" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="question">请输入您的问题：</label>
+                <input type="text" class="form-control" name="question" id="question" required>
+            </div>
+            <button type="submit" class="btn btn-primary">查询</button>
+            {% if answer %}
+                <div class="mt-4">
+                    <h2>答案：</h2>
+                    <p>{{ answer }}</p>
+                </div>
+            {% endif %}
+<!--            <h3 class="mt-4">生成知识图谱</h3>-->
+<!--            <div class="form-group">-->
+<!--                <label for="pdf">上传PDF文件：</label>-->
+<!--                <input type="file" class="form-control-file" name="pdf" id="pdf" accept="application/pdf">-->
+<!--            </div>-->
+<!--            <form method="get" zction="http://localhost:7474/browser/">-->
+<!--                <button type="button" class="btn btn-success">生成知识图谱</button>-->
+<!--            </form>-->
+<!--            <h3 class="mt-4">导入知识图谱</h3>-->
+<!--            <div class="form-group">-->
+<!--                <label for="import">选择知识图谱文件：</label>-->
+<!--                <input type="file" class="form-control-file" name="import" id="import" accept=".json,.ttl">-->
+<!--            </div>-->
+<!--            <button type="button" class="btn btn-info">导入知识图谱</button>-->
+        </form>
+<!--        {% if history %}-->
+<!--            <div class="mt-4">-->
+<!--                <h2>历史查询：</h2>-->
+<!--                <ul>-->
+<!--                    {% for record in history %}-->
+<!--                        <li>{{ record.question }} - {{ record.answer }}</li>-->
+<!--                    {% endfor %}-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        {% endif %}-->
+    </div>
+</body>
+</html>

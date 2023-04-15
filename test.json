@@ -1,0 +1,91 @@
+{
+"knowledge_graph": {
+"accident": [
+{
+"type": "舰艇破损进水",
+"consequence": ["倾覆", "沉没"]
+},
+{
+"type": "舰艇起火或爆炸"
+},
+{
+"type": "舰艇技术装备损坏"
+},
+{
+"type": "舰员被杀伤或毒害"
+}
+],
+"reason": [
+"敌方攻击",
+"海损事故"
+],
+"measure": [
+{
+"name": "舰艇损管",
+"definition": "处置舰艇损害活动",
+"purpose": "保障舰艇生命力"
+},
+{
+"name": "防火防爆设施",
+"usage": "限制火灾蔓延"
+},
+{
+"name": "灭火装备和器材",
+"usage": "快速有效地消灭火灾"
+}
+],
+"facility": [
+"防火防爆设施",
+"灭火装备和器材"
+],
+"tool": [
+"潜水技术"
+],
+"position": [
+{
+"title": "舰首长",
+"responsibility": "实施组织指挥全舰的损管工作"
+},
+{
+"title": "机电长",
+"responsibility": "领导本部门损管，协助舰首长具体组织领导全舰性损管"
+}
+],
+"person_name": [],
+"time": [],
+"organization": [
+{
+"name": "海军舰艇部队"
+}
+],
+"value": [],
+"attributes": [
+{
+"attribute": "舰艇生命力",
+"description": "舰艇抵抗各种损害，最大限度地保持和恢复其航行与作战的能力"
+},
+{
+"attribute": "航海性能"
+},
+{
+"attribute": "进攻性能"
+},
+{
+"attribute": "防御性能"
+},
+{
+"attribute": "战斗特性",
+"subattributes": ["打击特性", "战斗稳定性"]
+},
+{
+"attribute": "使用特性"
+}
+],
+"others": [
+{
+"name": "《水面舰艇损害管制条例》",
+"description": "规定保障舰艇生命力是全体舰员共同的战斗职责"
+}
+]
+}
+}
