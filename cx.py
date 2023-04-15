@@ -22,6 +22,9 @@ def cx(name):
         if i[1] > max:
             max = i[1]
             wz = i[0]
+    if max == 0:
+        ppp = '暂无此内容'
+        return ppp
 
     return wt.wt[wz-1]
 

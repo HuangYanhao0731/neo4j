@@ -49,15 +49,17 @@ def process_question(question):
 
     if QW in wt.wt:
         answer = z.A[QW]
+    else:
+        answer = "暂无此内容"
     # 生成回答
     answer = answer.strip()
-    if answer:
-        # 将问题和答案存入数据库
-        conn = sqlite3.connect("history.db")
-        c = conn.cursor()
-        c.execute("INSERT INTO history (question, answer) VALUES (?, ?)", (question, answer))
-        conn.commit()
-        conn.close()
+    # if answer:
+    #     # 将问题和答案存入数据库
+    #     conn = sqlite3.connect("history.db")
+    #     c = conn.cursor()
+    #     c.execute("INSERT INTO history (question, answer) VALUES (?, ?)", (question, answer))
+    #     conn.commit()
+    #     conn.close()
 
     return answer
 
