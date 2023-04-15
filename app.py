@@ -61,13 +61,13 @@ def process_question(question):
             answer += "\n很抱歉,目前我暂时还无法回答你的问题！"
     # 生成回答
     answer = answer.strip()
-    if answer:
-        # 将问题和答案存入数据库
-        conn = sqlite3.connect("history.db")
-        c = conn.cursor()
-        c.execute("INSERT INTO history (question, answer) VALUES (?, ?)", (question, answer))
-        conn.commit()
-        conn.close()
+    # if answer:
+    #     # 将问题和答案存入数据库
+    #     conn = sqlite3.connect("history.db")
+    #     c = conn.cursor()
+    #     c.execute("INSERT INTO history (question, answer) VALUES (?, ?)", (question, answer))
+    #     conn.commit()
+    #     conn.close()
 
     return answer
 
